@@ -4,6 +4,8 @@
 
 ## Answer:
 
+## 假設我今天去 Google 首頁搜尋框打上：JavaScript 並且按下 Enter，請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情。
+
 ## 請解釋後端與前端的差異。  
 
 ![](https://i.imgur.com/78doWHP.png)  
