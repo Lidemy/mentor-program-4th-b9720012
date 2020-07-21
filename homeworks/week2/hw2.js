@@ -12,6 +12,7 @@ capitalize('Nick')
 capitalize(',hello')
 正確回傳值：,hello
 */
+
 /*
 // 內建函式的寫法:
 function capitalize(str) {

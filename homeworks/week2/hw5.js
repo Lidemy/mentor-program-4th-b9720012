@@ -18,6 +18,7 @@ repeat('yoyo', 2)正確回傳值：yoyoyoyo
 
 */
 
+
 function join(str, concatStr) {
   var addStr = ''
   for (let i = 0 ; i < str.length ; i++) {
