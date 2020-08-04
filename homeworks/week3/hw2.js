@@ -35,7 +35,6 @@ function solve(lines) {
   }
 }
 // solve(['5 200'])
-
 // 回傳數字幾位數
 function digitsCount(n) {
   // eslint-disable-next-line
@@ -45,7 +44,7 @@ function digitsCount(n) {
   // eslint-disable-next-line
     n = Math.floor( n / 10) // 除 10 除了幾次就是幾位數，還要取整數;
     // eslint-disable-next-line
-	result += 1;
+	result++
   }
   return result;
 }
