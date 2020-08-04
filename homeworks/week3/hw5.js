@@ -36,7 +36,8 @@ function compare(a, b, p) {
   // 那如果是比小怎麼辦？把 AB 對調就好
   // 假設 A 是 5，B 是 3，我們的邏輯會回傳 A
   // 但如果是比小，把 AB 對調，就會回傳 B 了
-  if (p === -1) {
+  // eslint-disable-next-line
+  if (p == -1) {
 /* eslint-disable */
     let temp = a;
     a = b;
@@ -46,11 +47,11 @@ function compare(a, b, p) {
   const lengthA = a.length;
   const lengthB = b.length;
 
-  if (lengthA !== lengthB) {
+  if (lengthA != lengthB) {
     return lengthA > lengthB ? 'A' : 'B';
   }
   for (let j = 0; j < lengthA; j += 1) {
-    if (a[j] === b[j]) {
+    if (a[j] == b[j]) {
     // eslint-disable-next-line
       continue;
     }
