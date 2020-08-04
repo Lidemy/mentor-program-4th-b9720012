@@ -29,7 +29,7 @@ hw3：判斷質數
 */
 /* eslint-disable */
 function solve(lines){
-  for(let i=1; i<lines.length; i +=1) {
+  for(let i=1; i<lines.length; i += 1) {
     console.log(isPrime(Number(lines[i])) ? 'Prime' : 'Composite');
   }
 }
