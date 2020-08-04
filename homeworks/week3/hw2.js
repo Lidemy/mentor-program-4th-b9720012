@@ -27,7 +27,7 @@ function solve(lines) {
   const n = Number(temp[0]);
   const m = Number(temp[1]);
   // eslint-disable-next-line
-  for (const i = n; i <= m; i += 1) {
+  for (let i = n; i <= m; i++) {
   // eslint-disable-next-line
     if (isNarcissistic(i)) { // 如果 i 是水仙花數
       console.log(i);
@@ -36,33 +36,29 @@ function solve(lines) {
 }
 // solve(['5 200'])
 // 回傳數字幾位數
+/* eslint-disable */
 function digitsCount(n) {
-  // eslint-disable-next-line
-  if (n === 0) return 1; // 1, 1e2, 1e3...1e6 ， 限制在已知範圍;
-  const result = 0;
-  while (n !== 0) {
-  // eslint-disable-next-line
+  if (n===0) return 1 // 1, 1e2, 1e3...1e6 ， 限制在已知範圍;
+  let result = 0
+  while(n != 0) {
     n = Math.floor( n / 10) // 除 10 除了幾次就是幾位數，還要取整數;
-    // eslint-disable-next-line
-	result++
+    result++
   }
-  return result;
+  return result
 }
 // console.log(digitsCount(輸入數字))， 可以確定位數;
 function isNarcissistic(n) {
 // 對 10 取餘數可取到最後一數，取餘數完 /10 可取得最後一數;
 // 幾位數
-  const m = n;
-  const digits = digitsCount(m);
-  const sum = 0;
-  while (m !== 0) {
-    const num = m % 10;
+  let m = n  
+  let digits = digitsCount(m)
+  let sum = 0
+  while(m != 0) {
+    let num = m % 10
     // 可改成 Math.pow(num, digits)
-    // eslint-disable-next-line
     sum += num**digits // 總和=數字的 n 次方相加;
-    // eslint-disable-next-line
     m = Math.floor( m / 10)
-  }
+  } 
   // 最後 n 一定是 0 ;
   // console.log(isNarcissistic(輸入數字)) ， 判斷是不是水仙花數;
   // 可簡化成
@@ -85,7 +81,7 @@ function isNstr(n) {
   // eslint-disable-next-line
   for (const i = 0; i < str.length; i++) {
   // eslint-disable-next-line
-    sum += Number(str[i]) ** digits;
+    sum += Number(str[i])**digits;
   }
   return sum === n;
   // eslint-disable-next-line
