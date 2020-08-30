@@ -75,25 +75,30 @@ http://www.měishí píngtái.com/
   },
 ],```| 說明 | Method | path | 參數 | 範例 |
 |--------|--------|------------|----------------------|----------------|
-| 獲取所有餐廳 | GET | /restaurant | _limit:限制回傳資料數量 | /restaurant?_limit=5 |
-| 獲取單一餐廳 | GET | /restaurant/:id | 無 | /books/5 |
-| 新增餐廳 | POST | /restaurant | name: 餐廳名稱 | :id |
-| 刪除餐廳 | DELETE | /restaurant/:id | 無 | 無 |
-| 更改餐廳資訊 | PATCH | /restaurant/:id | 變更的項目: 內容 | 無 |取得所有餐廳時：GET /restaurant
+| 獲取所有餐廳 | GET | /food_restaurant | _limit:限制回傳資料數量 | /food_restaurant?_limit=5 |
+| 獲取單一餐廳 | GET | /food_restaurant | :id  | /food_restaurant/:id  |
+| 新增餐廳 | POST | /food_restaurant | 餐廳名稱 | :add |
+| 刪除餐廳 | DELETE | /food_restaurant | 無 | 無 |
+| 更改餐廳資訊 | PATCH | /food_restaurant | 變更的項目: 內容 | 無 |
 ```
-GET http://www.goodfood.com/restaurant
-```獲取其中一個餐廳時： GET /restaurant/:id 
+GET http://www.měishí píngtái.com/food_restaurant/:id 
+獲取其中一個餐廳時： GET /food_restaurant/:id 
 ```
-GET http://www.goodfood.com/restaurant/1
-```新增餐廳：POST /restaurant 
 ```
-POST http://www.goodfood.com/restaurant/
-```刪除餐廳：DELETE /restaurant/:id 
+GET http://www.měishí píngtái.com/food_restaurant/:add
+新增餐廳：POST /food_restaurant/:add
 ```
-DELETE http://www.goodfood.com/restaurant/1
-```變更餐廳資訊：PATCH restaurant/:id 
 ```
-PATCH http://www.goodfood.com/restaurant/1
+POST http://www.měishí píngtái.com/food_restaurant/:id 
+更替餐廳：DELETE /food_restaurant/:id 
+```
+```
+DELETE http://www.měishí píngtái.com/food_restaurant/:del
+刪除餐廳資訊：PATCH food_restaurant/:del
+```
+```
+PATCH http://www.měishí píngtái.com/food_restaurant/:alt
+修改餐廳資訊：PATCH food_restaurant/:alt
 ```
 
 -----------------------------------------------------------------------------------------------------------------------------------------
