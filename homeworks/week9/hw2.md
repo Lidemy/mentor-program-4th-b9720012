@@ -2,7 +2,7 @@
 ### 可能的 Table schema 設定 
 基本資料表，例如: 
 - 會對 username (ID) 做限制，例如型態設成 VARCHAR ， 長度/值限制在 20 ， 超過不能存入 ， VARCHAR 會依照資料的長度變更其儲存空間大小。
-- content (ID) ， 型態會設成 TEXT ，TEXT 不太需要管長度，不是 Unicode ， 長度最大達 2^31-1(2,147,483,647) 大小，文檔再大一點可能會選 LONGTEXT 。
+- content (ID) ， 型態會設成 TEXT ，TEXT 不太需要管長度，不是 Unicode ， 長度最大達 2^16 -1 大小，文檔再大一點可能會選 LONGTEXT 。
 
 ***
 
